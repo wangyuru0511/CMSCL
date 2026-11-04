@@ -7,7 +7,7 @@ import torch.optim as optim
 import torch.nn as nn
 import numpy as np
 import argparse
-from model.HetDDI import HetDDI
+from model.CMSCL import CMSCL
 from utils.scl_loss import DDI_SCL_Loss
 from utils.data_loader import load_data, get_train_test
 from train_test import train_one_epoch, test
@@ -152,7 +152,7 @@ def run(args):
         # STEP 4銆乴oad model
         class_num = 65 if args.ddi_name == 'Deng' else 86
         args.class_num = class_num
-        model = HetDDI(
+        model = CMSCL(
             kg_g,
             smiles,
             args.hidden_dim,

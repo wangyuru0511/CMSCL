@@ -5,7 +5,7 @@ from model.hgnn import HGNN
 from model.decoder import Mlp
 
 
-class HetDDI(nn.Module):
+class CMSCL(nn.Module):
     def __init__(self,
                  kg_g,
                  smiles,
@@ -18,7 +18,7 @@ class HetDDI(nn.Module):
                  proj_dim=128,
                  proj_dropout=0.2,
                  ):
-        super(HetDDI, self).__init__()
+        super(CMSCL, self).__init__()
 
         self.smiles = smiles
         self.device = kg_g.device

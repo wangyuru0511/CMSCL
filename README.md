@@ -9,7 +9,7 @@ CMSCL combines molecular representations enriched with transferred geometric, te
 ```text
 main.py                         Training and five-fold evaluation entry point
 train_test.py                   Training and evaluation routines
-model/HetDDI.py                 Combined model (historical class name retained)
+model/CMSCL.py                  Combined CMSCL model
 model/m2umol_encoder.py         Molecular encoder and pretrained weight loading
 model/hgnn.py                   Knowledge graph encoder
 utils/scl_loss.py              SCL loss used by the training entry point

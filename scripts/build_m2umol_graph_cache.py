@@ -137,7 +137,7 @@ def build_cache(data_dir, symbo_path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Build M2UMol PyG graph cache for HetDDI drugs.")
+    parser = argparse.ArgumentParser(description="Build M2UMol PyG graph cache for CMSCL drugs.")
     parser.add_argument("--data_path", type=str, default="./data")
     parser.add_argument("--kg_name", type=str, default="DRKG")
     parser.add_argument("--ddi_names", nargs="+", default=["Deng", "Ryu"], choices=["Deng", "Ryu"])
