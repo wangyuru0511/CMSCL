@@ -1,0 +1,42 @@
+# Python and local development
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Experiment outputs and large binary artifacts
+log/
+logs/
+outputs/
+runs/
+*.pt
+*.pth
+*.pkl
+*.ckpt
+
+# Publish documented input data; exclude generated experiment artifacts
+/data/*
+!/data/README.md
+!/data/symbo.npy
+!/data/DRKG+Deng/
+!/data/DRKG+Ryu/
+/data/DRKG+Deng/*
+/data/DRKG+Ryu/*
+!/data/DRKG+Deng/nodes.tsv
+!/data/DRKG+Deng/edges.tsv
+!/data/DRKG+Deng/smiles.tsv
+!/data/DRKG+Deng/ddi.tsv
+!/data/DRKG+Ryu/nodes.tsv
+!/data/DRKG+Ryu/edges.tsv
+!/data/DRKG+Ryu/smiles.tsv
+!/data/DRKG+Ryu/ddi.tsv
+
+# Operating system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+# PyTorch version specified by the author; other experimental versions remain to be recorded.
+# CUDA 12.1 PyTorch wheels; select matching DGL and PyG builds.
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.2.1+cu121
+dgl
+torch-geometric
+numpy
+pandas
+scikit-learn
+tqdm
+rdkit
+# Used by the legacy model/mol.py implementation:
+dgllife
